@@ -1,0 +1,86 @@
+/* .satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.page nav{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 1rem;
+}
+
+.page form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page form h1{
+    font-size: 2.3rem;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.page form input{
+    border: none;
+    outline: none;
+    background-color: #FAFAFA;
+    font-size: 17px;
+    padding: .3rem 1rem;
+
+}
+
+.page form .submit{
+    background-color: #3797EF;
+    color: white;
+    border-radius: 5px;
+    padding: .5rem 6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page form .submit:hover{
+    background-color: #60b5ff;
+}
+
+.forgetpass {
+    position: relative;
+    transform: translate(50%);
+    text-align: right;
+    text-decoration: none;
+    color: #3797EF;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

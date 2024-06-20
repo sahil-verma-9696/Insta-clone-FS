@@ -1,26 +1,17 @@
-const express = require("express");
+const express  = require("express");
 const app = express();
-const mongoose = require("mongoose");
 
-const Schema = mongoose.Schema;
+const path = require("path");
 
-const user = new Schema({
-    name : String,
-});
+const PORT = 3000;
 
-const User = mongoose.model("User",user);
+// setting views
+app.set("view engine","ejs");
+app.use(express.static(path.join(__dirname,"public")));
 
-mongoose.connect("mongodb://127.0.0.1:27017/newuser");
+// page serving routes
+app.use();
 
-const creatinguser = async (req,res)=>{
-    const newuser = await User.create({
-        name : "sahil"
-    })
-    res.send(newuser);
-}
-
-app.get("/:x",creatinguser);
-
-app.listen(3000,()=>{
-    console.log('server is running');
+app.listen(PORT,()=>{
+    console.log("server is running");
 })
