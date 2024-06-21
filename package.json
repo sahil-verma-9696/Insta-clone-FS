@@ -1,0 +1,26 @@
+{
+  "name": "insta-clone",
+  "version": "1.0.0",
+  "description": "\"practising backend\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil-verma-9696/Insta-clone-FS.git"
+  },
+  "author": "\"Sahil Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahil-verma-9696/Insta-clone-FS/issues"
+  },
+  "homepage": "https://github.com/sahil-verma-9696/Insta-clone-FS#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "nodemon": "^3.1.3"
+  }
+}
