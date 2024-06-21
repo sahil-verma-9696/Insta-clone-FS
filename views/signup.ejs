@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="/stylesheets/signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>login</title>
+    <title>sign up</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             </a>
             <div></div>
         </nav>
-        <form action="">
+        <form action="/api/signup" method="post">
             <h1 class="logo">Instragram</h1>
             <div class="profile">
                 <h5>Insert Img Address</h5>
@@ -32,7 +32,7 @@
             <input type="text" class="imgAddress" name="imgAddress" placeholder="profile address">
             <input type="text" class="name" name="name" placeholder="user name">
             <input type="password" class="password" placeholder="New Password">
-            <input type="password" class="confirmPassword" placeholder="Confirm Password">
+            <input type="password" name="password" class="confirmPassword" placeholder="Confirm Password">
           
             <input type="submit" value="Sign up" class="submit">
             <p>or</p>
@@ -46,5 +46,5 @@
         </footer>
     </div>
 </body>
-<script src="signup.js"></script>
+<script src="/scripts/signup.js"></script>
 </html>

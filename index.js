@@ -1,17 +1,22 @@
-const express  = require("express");
+const express = require("express");
+const path = require("path");
 const app = express();
 
-const path = require("path");
+const fileRoutes = require("./route/pageServing");
+const apiRoutes = require("./route/api");
 
-const PORT = 3000;
+app.use(express.json());
+app.use(express.urlencoded({extended : true}));
 
-// setting views
 app.set("view engine","ejs");
 app.use(express.static(path.join(__dirname,"public")));
 
-// page serving routes
-app.use();
+// serving pages
+app.use("/page",fileRoutes);
+// serving api
+app.use("/api",apiRoutes);
 
-app.listen(PORT,()=>{
-    console.log("server is running");
-})
+
+app.listen(3000,()=>{
+    console.log("server started");
+});

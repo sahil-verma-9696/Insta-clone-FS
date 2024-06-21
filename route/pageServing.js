@@ -1,7 +1,10 @@
 const express = require("express");
 
-const {login} = require("./../controller/pageserver;")
+const { loginPage, signupPage } = require("./../controller/pageserver")
 
-const route = express.Router;
+const route = express.Router();
 
-route.get("/login",login);
+route.get("/login", loginPage);
+route.get("/signup", signupPage);
+
+module.exports = route;
