@@ -17,7 +17,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 30%;
+    width: 25%;
     height: 100%;
     overflow: hidden;
     display: flex;
@@ -60,7 +60,7 @@ body {
 .page .hero .profile {
     width: 70px;
     height: 70px;
-    background-color: blue;
+    border: 2px solid purple;
     border-radius: 50%;
     /* position: relative; */
     display: flex;
@@ -170,4 +170,20 @@ footer {
 
 ::-webkit-scrollbar-corner {
     background: #f1f1f1;
+}
+
+.profileicon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(179, 12, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileicon img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
 }
